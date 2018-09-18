@@ -1,11 +1,11 @@
 import UIKit
 
 class ButtonTemplate : UIButton {
-    func setColorTitle() {
+    func setTitleColor() {
         
     }
     
-    func setColorBackground() {
+    func setBackgroundColor() {
         
     }
     
@@ -14,8 +14,8 @@ class ButtonTemplate : UIButton {
     }
     
     func initialize() {
-        setColorTitle()
-        setColorBackground()
+        setTitleColor()
+        setBackgroundColor()
         setTitle()
     }
 }
@@ -23,5 +23,15 @@ class ButtonTemplate : UIButton {
 class AlertButton : ButtonTemplate {
     override func setTitle() {
         self.setTitle("Alert", for: .normal)
+    }
+}
+
+class WarningButton : ButtonTemplate {
+    override func setTitleColor() {
+        self.setTitleColor(UIColor.red, for: .normal)
+    }
+    
+    override func setTitle() {
+        self.setTitle("Warning", for: .normal)
     }
 }
