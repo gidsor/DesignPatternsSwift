@@ -68,6 +68,6 @@ class CarrierState {
     
     func load() {
         if state == nil { return }
-        painter.load(state: state)
+        painter.load(state: state!)
     }
 }
