@@ -7,7 +7,7 @@ protocol Chain {
     func check() -> (isSuccess: Bool, error: String)
 }
 
-class NetworkManager : Chain {
+class NetworkManager: Chain {
     var nextStep: Chain?
     
     func check() -> (isSuccess: Bool, error: String) {
@@ -35,7 +35,7 @@ class NetworkManager : Chain {
     }
 }
 
-class DownloadManager : Chain {
+class DownloadManager: Chain {
     var nextStep: Chain?
     
     func check() -> (isSuccess: Bool, error: String) {
@@ -55,7 +55,7 @@ class DownloadManager : Chain {
     }
 }
 
-class DeviceManager : Chain {
+class DeviceManager: Chain {
     var nextStep: Chain?
     
     func check() -> (isSuccess: Bool, error: String) {

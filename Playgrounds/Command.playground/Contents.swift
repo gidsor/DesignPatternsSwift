@@ -37,7 +37,7 @@ class Sound {
     }
 }
 
-class HeatingCommand : Command {
+class HeatingCommand: Command {
     var heating: Heating
     
     init(heating: Heating) {
@@ -53,7 +53,7 @@ class HeatingCommand : Command {
     }
 }
 
-class LightCommand : Command {
+class LightCommand: Command {
     var light: Light
     
     init(light: Light) {
@@ -69,7 +69,7 @@ class LightCommand : Command {
     }
 }
 
-class SoundCommand : Command {
+class SoundCommand: Command {
     var sound: Sound
     
     init(sound: Sound) {

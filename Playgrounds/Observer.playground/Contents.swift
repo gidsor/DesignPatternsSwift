@@ -12,7 +12,7 @@ protocol Listener {
     func doAction(message: String)
 }
 
-class Notificator : Publisher {
+class Notificator: Publisher {
     
     var listeners: NSMutableArray = NSMutableArray()
     
@@ -31,14 +31,14 @@ class Notificator : Publisher {
     }
 }
 
-class NetworkManager : Notificator {
+class NetworkManager: Notificator {
     func loadImage(url: URL?) -> NSImage? {
         sendMessage(message: "Image Loaded")
         return nil
     }
 }
 
-class Controller : Listener {
+class Controller: Listener {
     
     var nm = NetworkManager()
     

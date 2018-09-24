@@ -6,25 +6,25 @@ protocol Strategy {
     func doAction(a: Double, b: Double) -> Double
 }
 
-class Sum : Strategy {
+class Sum: Strategy {
     func doAction(a: Double, b: Double) -> Double {
         return a + b
     }
 }
 
-class Mul : Strategy {
+class Mul: Strategy {
     func doAction(a: Double, b: Double) -> Double {
         return a * b
     }
 }
 
-class Div : Strategy {
+class Div: Strategy {
     func doAction(a: Double, b: Double) -> Double {
         return a / b
     }
 }
 
-class Math : Strategy {
+class Math: Strategy {
     
     private var instance: Strategy
     

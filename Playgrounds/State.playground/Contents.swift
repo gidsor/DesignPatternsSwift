@@ -6,27 +6,27 @@ protocol State {
     func doAction(compitionHandler: ((State)->Void)?)
 }
 
-class StateOne : State {
+class StateOne: State {
     func doAction(compitionHandler: ((State)->Void)?) {
         print("Action in state 1")
         compitionHandler?(StateTwo())
     }
 }
 
-class StateTwo : State {
+class StateTwo: State {
     func doAction(compitionHandler: ((State)->Void)?) {
         print("Action in state 2")
         compitionHandler?(StateThree())
     }
 }
 
-class StateThree : State {
+class StateThree: State {
     func doAction(compitionHandler: ((State)->Void)?) {
         print("Action in state 3")
     }
 }
 
-class MainClass : State {
+class MainClass: State {
     
     var currentState: State = StateOne()
     

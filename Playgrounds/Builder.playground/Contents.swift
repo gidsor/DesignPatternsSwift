@@ -20,7 +20,7 @@ protocol Builder {
     func getResult() -> Phone
 }
 
-class IPhoneBuilder : Builder {
+class IPhoneBuilder: Builder {
     
     var phone: Phone = Phone()
     
@@ -49,7 +49,7 @@ class IPhoneBuilder : Builder {
     }
 }
 
-class AndroidBuilder : Builder {
+class AndroidBuilder: Builder {
     var phone: Phone = Phone()
     
     func reset() {

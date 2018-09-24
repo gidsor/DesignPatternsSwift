@@ -8,7 +8,7 @@ protocol Composite {
     func addComponent(c: Composite)
 }
 
-class File : Composite {
+class File: Composite {
     var name: String
     
     init(name: String) {
@@ -24,7 +24,7 @@ class File : Composite {
     }
 }
 
-class Folder : Composite {
+class Folder: Composite {
     var name: String
     
     init(name: String) {

@@ -1,6 +1,6 @@
 import UIKit
 
-class ButtonTemplate : UIButton {
+class ButtonTemplate: UIButton {
     func setTitleColor() {
         
     }
@@ -20,13 +20,13 @@ class ButtonTemplate : UIButton {
     }
 }
 
-class AlertButton : ButtonTemplate {
+class AlertButton: ButtonTemplate {
     override func setTitle() {
         self.setTitle("Alert", for: .normal)
     }
 }
 
-class WarningButton : ButtonTemplate {
+class WarningButton: ButtonTemplate {
     override func setTitleColor() {
         self.setTitleColor(UIColor.red, for: .normal)
     }

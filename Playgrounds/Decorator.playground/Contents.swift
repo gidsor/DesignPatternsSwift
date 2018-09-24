@@ -7,7 +7,7 @@ protocol MacBook {
     var description: String {get}
 }
 
-class MacBookAir : MacBook {
+class MacBookAir: MacBook {
     var price: Int {
         get {
             return 50000
@@ -20,7 +20,7 @@ class MacBookAir : MacBook {
     }
 }
 
-class MacBookDecorator : MacBook {
+class MacBookDecorator: MacBook {
     var price: Int {
         get {
             return instance.price
@@ -38,7 +38,7 @@ class MacBookDecorator : MacBook {
     }
 }
 
-class UpgradeOne : MacBookDecorator {
+class UpgradeOne: MacBookDecorator {
     override var price: Int {
         get {
             return instance.price + 5999
@@ -56,7 +56,7 @@ class UpgradeOne : MacBookDecorator {
     }
 }
 
-class UpgradeTwo : MacBookDecorator {
+class UpgradeTwo: MacBookDecorator {
     override var price: Int {
         get {
             return instance.price + 6999

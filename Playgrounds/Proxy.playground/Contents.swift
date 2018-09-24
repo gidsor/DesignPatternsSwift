@@ -13,7 +13,7 @@ class VideoService : VideoServiceProtocol {
     }
 }
 
-class Proxy : VideoServiceProtocol {
+class Proxy: VideoServiceProtocol {
     var service: VideoServiceProtocol?
     private var cashedData: [Data]?
     

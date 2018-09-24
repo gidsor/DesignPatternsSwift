@@ -9,7 +9,7 @@ protocol Exercise {
     func stop()
 }
 
-class Squats : Exercise {
+class Squats: Exercise {
     var name: String = "Приседания"
     var type: String = "Упражнения для ног"
     
@@ -22,7 +22,7 @@ class Squats : Exercise {
     }
 }
 
-class PushUps : Exercise {
+class PushUps: Exercise {
     var name: String = "Отжимания"
     var type: String = "Упражнения для рук"
     
@@ -35,7 +35,7 @@ class PushUps : Exercise {
     }
 }
 
-class Jogging : Exercise {
+class Jogging: Exercise {
     var name: String = "Пробежка"
     var type: String = "Упражнения для выносливости"
     

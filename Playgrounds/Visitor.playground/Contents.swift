@@ -9,7 +9,7 @@ protocol Acceptor {
     func showData(visitor: Visitor)
 }
 
-class Person : Acceptor {
+class Person: Acceptor {
     var firstName: String = ""
     var secondName: String = ""
     var email: String = ""
@@ -19,7 +19,7 @@ class Person : Acceptor {
     }
 }
 
-class Note : Acceptor {
+class Note: Acceptor {
     var title: String = ""
     var text: String = ""
     
@@ -28,7 +28,7 @@ class Note : Acceptor {
     }
 }
 
-class GeneratorTXT : Visitor {
+class GeneratorTXT: Visitor {
     var txt: String = ""
     
     func visit(person: Person) {

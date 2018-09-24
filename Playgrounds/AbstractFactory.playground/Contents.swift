@@ -7,14 +7,14 @@ protocol Button {
     func pushButton()
 }
 
-class ButtonIPhone : Button {
+class ButtonIPhone: Button {
     var size: CGRect?
     func pushButton() {
         print("Push iPhone button!")
     }
 }
 
-class ButtonIPad : Button {
+class ButtonIPad: Button {
     var size: CGRect?
     func pushButton() {
         print("Push iPad button!")
@@ -26,14 +26,14 @@ protocol Image {
     func pushOnImage()
 }
 
-class ImageIPhone : Image {
+class ImageIPhone: Image {
     var size: CGRect?
     func pushOnImage() {
         print("Push on iPhone image")
     }
 }
 
-class ImageIPad : Image {
+class ImageIPad: Image {
     var size: CGRect?
     func pushOnImage() {
         print("Push on iPad image")
@@ -45,14 +45,14 @@ protocol TextView {
     func didEnterText()
 }
 
-class TextViewIPhone : TextView {
+class TextViewIPhone: TextView {
     var size: CGRect?
     func didEnterText() {
         print("Enter text on iPhone")
     }
 }
 
-class TextViewIPad : TextView {
+class TextViewIPad: TextView {
     var size: CGRect?
     func didEnterText() {
         print("Enter text on iPad")
@@ -66,7 +66,7 @@ protocol AbstractFactory {
     func createTextView() -> TextView
 }
 
-class IPhoneFactory : AbstractFactory {
+class IPhoneFactory: AbstractFactory {
     func createButton() -> Button {
         return ButtonIPhone
     }
@@ -80,7 +80,7 @@ class IPhoneFactory : AbstractFactory {
     }
 }
 
-class IPadFactory : AbstractFactory {
+class IPadFactory: AbstractFactory {
     func createButton() -> Button {
         return ButtonIPad
     }

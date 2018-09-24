@@ -12,7 +12,7 @@ class Print {
     }
 }
 
-class Adapter : PrintProtocol {
+class Adapter: PrintProtocol {
     var print: Print
     
     init(print: Print) {
